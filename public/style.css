@@ -1,3 +1,112 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* HEADER FIXO */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ESPAÇO PRO HEADER */
+main {
+    margin-top: 80px;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LORE */
+.lore {
+    padding: 40px;
+}
+
+.lore article {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1a1a1a;
+}
+
+/* ÁLBUNS */
+.albuns {
+    padding: 40px;
+}
+
+.album {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.album.reverse {
+    flex-direction: row-reverse;
+}
+
+.album img {
+    width: 300px;
+}
+
+.album ul {
+    margin-top: 10px;
+}
+
+/* MÚSICAS */
+.musicas {
+    padding: 40px;
+}
+
+.musica {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.musica span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
 }
